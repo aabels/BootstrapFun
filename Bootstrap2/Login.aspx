@@ -29,6 +29,10 @@
         <!-- Bootstrap core CSS -->
         <link href="/Content/bootstrap.css" rel="stylesheet" />
         <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <script src="Scripts/jquery-3.3.1.js"></script>
+        <script src="Scripts/jquery-ui.js"></script>
+        <link href="Scripts/jquery-ui.css" rel="stylesheet" />
 
           <style>
           .bd-placeholder-img {
@@ -48,6 +52,13 @@
         </style>
         <!-- Custom styles for this template -->
         <link href="/Content/login.css" rel="stylesheet">
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#inputEmail').autocomplete({
+                    source: "EmployeeHandler.ashx"
+                });
+            });
+       </script>
       </head>
       <body class="text-center">
         <nav class="navbar navbar-inverse navbar-fixed-top">
